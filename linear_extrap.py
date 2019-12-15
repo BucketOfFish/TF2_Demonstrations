@@ -35,7 +35,7 @@ for i in range(n_epochs):
 print(f"Final loss: {loss}")
 print(f"W = {model.W.numpy()}, B = {model.B.numpy()}")
 
-model.save_weights("Weights/linear")
+model.save_weights("Weights/Linear/linear")
 
 plt.scatter(training_inputs, training_truth)
 plt.plot([-5, 5], [-5*model.W+model.B, 5*model.W+model.B], 'r')
